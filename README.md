@@ -8,4 +8,4 @@ If you wish to modify the buttons, you can start by changing the #define lines i
 
 The code is available at https://github.com/skyl4rk/uBITX_6_HI_VIZ .
 
-KC8WBK
+KC8WBK# uBITX_6_HI_VIZ
