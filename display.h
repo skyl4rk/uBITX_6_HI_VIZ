@@ -39,7 +39,7 @@ const unsigned SCREEN_HEIGHT = 240; // display height, in pixels
 const byte BUTTON_WIDTH = 64;
 const byte BUTTON_HEIGHT = 40;
 
-const byte INFO_TEXT_SIZE = 2;
+const byte INFO_TEXT_SIZE = 4;
 
 extern const byte VFOA_LEFT;
 extern const byte VFOA_TOP;

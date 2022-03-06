@@ -85,7 +85,7 @@ const unsigned HIGH_BUTTON_BG_COLOR = ILI9341_CYAN;
 const unsigned HIGH_BUTTON_TEXT_COLOR = ILI9341_BLACK;
 const unsigned BG_COLOR = ILI9341_BLACK;
 const unsigned PTT_COLOR = ILI9341_RED;
-const unsigned INFO_TEXT_COLOR = ILI9341_CYAN;
+const unsigned INFO_TEXT_COLOR = ILI9341_RED;
 const unsigned INFO_BORDER_COLOR = ILI9341_BLUE;
 const unsigned INFO_BG_COLOR = RGB565(31, 31, 0);
 const unsigned KEYPAD_COLOR = ILI9341_CYAN;
@@ -193,8 +193,8 @@ void display::update_info_number(const long new_value,
                                  const bool do_negative=false) {
   
   display_digits(new_value, current_info, 
-    info_left + (info_wide - CHAR_WIDTH * font_size * len) / 2,
-    info_top + (BUTTON_HEIGHT - CHAR_HEIGHT * font_size) / 2,
+    info_left / 10, //+ (info_wide - CHAR_WIDTH * font_size * len) / 2,
+    info_top / 2, // + (BUTTON_HEIGHT - CHAR_HEIGHT * font_size) / 2,
     INFO_TEXT_COLOR, info_bg_color, font_size,
     len, do_negative);
 
